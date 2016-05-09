@@ -52,7 +52,7 @@ class DataSet:
     def _finishElapsedTimeMs(self, doOutput = True):
         elapsedTime = time.time() - self.startTime
         if doOutput:
-            print('  -elapsedTime:', round(elapsedTime * 1000, 4), 'ms')
+            print('  -elapsedTime: ' + str(round(elapsedTime * 1000, 4)) + ' ms')
         return elapsedTime
 
     # display utility
@@ -66,8 +66,8 @@ class DataSet:
     # debug utility
     def debug(self):
         self._outputFuncHeader()
-        print('  -seedCount:', self._seedCount)
-        print('  -values:', self._values)
+        print('  -seedCount: ' + str(self._seedCount))
+        print('  -values: ' + str(self._values))
 
 
 dataSets = []
